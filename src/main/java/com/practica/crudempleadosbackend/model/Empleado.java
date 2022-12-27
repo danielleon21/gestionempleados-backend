@@ -1,11 +1,10 @@
 package com.practica.crudempleadosbackend.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
-public class Empleado {
+public class Empleado implements Serializable {
     @Id
     @GeneratedValue
     private Long id;
